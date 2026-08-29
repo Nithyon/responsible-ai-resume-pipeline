@@ -1,0 +1,42 @@
+{
+  "node_labels": {
+    "Candidate": {"key": "candidate_id"},
+    "Resume": {"key": "source_sha256"},
+    "Skill": {"key": "name"},
+    "Company": {"key": "name"},
+    "Role": {"key": "name"},
+    "Institution": {"key": "name"},
+    "Degree": {"key": "name"},
+    "Project": {"key": "project_id"},
+    "Certification": {"key": ["name", "issuer"]},
+    "Language": {"key": "name"},
+    "Image": {"key": "image_id"},
+    "Page": {"key": "page_id"},
+    "Section": {"key": "section_id"},
+    "TextBlock": {"key": "block_id"},
+    "Table": {"key": "block_id"}
+  },
+  "relationship_types": {
+    "HAS_RESUME": {"from": "Candidate", "to": "Resume"},
+    "HAS_SKILL": {"from": "Candidate", "to": "Skill", "properties": ["category"]},
+    "WORKED_AT": {"from": "Candidate", "to": "Company", "properties": ["experience_id", "job_title", "location", "start_date", "end_date", "description"]},
+    "HELD_ROLE": {"from": "Candidate", "to": "Role"},
+    "STUDIED_AT": {"from": "Candidate", "to": "Institution", "properties": ["education_id", "graduation_year", "location"]},
+    "EARNED_DEGREE": {"from": "Candidate", "to": "Degree"},
+    "BUILT": {"from": "Candidate", "to": "Project"},
+    "USES": {"from": "Project", "to": "Skill"},
+    "EARNED_CERTIFICATION": {"from": "Candidate", "to": "Certification"},
+    "SPEAKS": {"from": "Candidate", "to": "Language", "properties": ["proficiency"]},
+    "HAS_IMAGE": {"from": "Candidate", "to": "Image"},
+    "HAS_PAGE": {"from": "Resume", "to": "Page"},
+    "HAS_SECTION": {"from": "Resume", "to": "Section"},
+    "HAS_BLOCK": {"from": ["Page", "Section"], "to": ["TextBlock", "Image", "Table"]},
+    "NEXT_BLOCK": {"from": ["TextBlock", "Image", "Table"], "to": ["TextBlock", "Image", "Table"]},
+    "HAS_CONTEXT": {"from": ["Image", "Table"], "to": "TextBlock"},
+    "EXTRACTED_FROM": {
+      "from": ["Candidate", "Skill", "Company", "Role", "Institution", "Degree", "Project", "Certification", "Language"],
+      "to": ["TextBlock", "Table"],
+      "properties": ["claim_id", "field", "value", "page_number", "match_type", "score"]
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "candidate": {
+    "name": "Aanya Rao",
+    "email": "aanya.rao@example.test",
+    "phone": "+91 90000 00001",
+    "location": "Bengaluru, India",
+    "linkedin": "https://linkedin.example/aanya-rao",
+    "portfolio": "https://portfolio.example/aanya",
+    "headline": "Data Engineer",
+    "summary": "Data engineer with four years of experience building reliable batch and streaming pipelines for retail analytics."
+  },
+  "sections": {
+    "skills": [
+      {"name": "Python", "category": "Programming"},
+      {"name": "SQL", "category": "Data"},
+      {"name": "Apache Spark", "category": "Data"}
+    ],
+    "experience": [
+      {
+        "experience_id": "cand_cba7f2b21aad_exp_1",
+        "job_title": "Data Engineer",
+        "company": "Meridian Retail Labs",
+        "location": "Bengaluru, India",
+        "start_date": "2022-07",
+        "end_date": "Present",
+        "description": "Built Spark pipelines and improved data freshness by 35 percent."
+      }
+    ],
+    "education": [
+      {
+        "education_id": "cand_cba7f2b21aad_edu_1",
+        "degree": "B.Tech Computer Science",
+        "institution": "Visvesvaraya Technological University",
+        "location": "Bengaluru, India",
+        "graduation_year": "2020"
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "cand_cba7f2b21aad_proj_1",
+        "name": "Real-time Inventory Monitor",
+        "technologies": ["Kafka", "Spark", "Python"],
+        "description": "Detected low-stock events from synthetic store feeds.",
+        "url": "https://portfolio.example/aanya/inventory"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "AWS Certified Data Engineer - Associate",
+        "issuer": "Amazon Web Services",
+        "year": "2025"
+      }
+    ],
+    "languages": [
+      {"name": "English", "proficiency": "Professional"},
+      {"name": "Kannada", "proficiency": "Native"}
+    ]
+  },
+  "source_document": {
+    "source_file": "resume_01_data_engineer.md",
+    "source_sha256": "fb12cb7edfbff29ef86b7e239c094d15f52a3623648ea0cd08a6c982829d2838",
+    "ingested_at": "2026-01-01T00:00:00+00:00",
+    "parser_version": "deterministic-1.0.0"
+  },
+  "images": []
+}

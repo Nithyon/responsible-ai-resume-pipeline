@@ -1,0 +1,16 @@
+{
+  "collection": "resume_sections",
+  "embedding": "Chroma default local embedding function",
+  "document_granularity": "one summary document and one document per non-empty section per candidate",
+  "id_format": "{candidate_id}:{section}",
+  "metadata": [
+    "candidate_id",
+    "candidate_name",
+    "section",
+    "source_file",
+    "headline",
+    "location",
+    "image_count",
+    "image_paths"
+  ]
+}

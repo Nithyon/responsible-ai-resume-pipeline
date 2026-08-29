@@ -1,0 +1,28 @@
+# Grace Okafor
+Email: grace.okafor@example.test
+Phone: +234 800 000 0004
+Location: Lagos, Nigeria
+Headline: Registered Nurse
+
+[SUMMARY]
+Registered nurse experienced in acute medical wards, patient education, clinical documentation, and multidisciplinary care.
+
+[SKILLS]
+Patient Assessment | Clinical; Medication Administration | Clinical; Electronic Health Records | Technology; Patient Education | Communication; Infection Control | Clinical
+
+[EXPERIENCE]
+Registered Nurse | Lagoon General Hospital | Lagos, Nigeria | 2020-09 | Present | Coordinates care for up to ten patients per shift and mentors newly qualified nurses.
+Staff Nurse | Community Health Centre Yaba | Lagos, Nigeria | 2018-07 | 2020-08 | Delivered vaccinations, wound care, and chronic-disease education.
+
+[EDUCATION]
+B.NSc. Nursing | University of Lagos | Lagos, Nigeria | 2018
+
+[PROJECTS]
+Ward Handover Improvement | Clinical Audit, Training | Introduced a structured bedside handover checklist that reduced missing documentation. |
+
+[CERTIFICATIONS]
+Basic Life Support | American Heart Association | 2025
+
+[LANGUAGES]
+English | Fluent; Igbo | Native; Yoruba | Conversational
+

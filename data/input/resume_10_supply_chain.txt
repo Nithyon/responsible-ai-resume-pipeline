@@ -1,0 +1,30 @@
+# Sofia Alvarez
+Email: sofia.alvarez@example.test
+Phone: +34 600 000 010
+Location: Madrid, Spain
+LinkedIn: https://linkedin.example/sofia-alvarez
+Headline: Supply Chain Specialist
+
+[SUMMARY]
+Supply chain specialist improving demand planning, supplier coordination, and inventory performance in food distribution.
+
+[SKILLS]
+Demand Planning | Supply Chain; SAP | ERP; Excel | Analytics; Inventory Optimization | Supply Chain; Supplier Management | Supply Chain; Power BI | Analytics
+
+[EXPERIENCE]
+Supply Chain Specialist | Iberia Fresh Foods | Madrid, Spain | 2021-06 | Present | Improved forecast cadence and reduced slow-moving inventory through SKU segmentation.
+Logistics Coordinator | Costa Distribution | Valencia, Spain | 2018-09 | 2021-05 | Coordinated inbound shipments and resolved supplier delivery exceptions.
+
+[EDUCATION]
+M.Sc. Supply Chain Management | Universidad Politecnica de Madrid | Madrid, Spain | 2018
+B.B.A. Operations | University of Valencia | Valencia, Spain | 2017
+
+[PROJECTS]
+Inventory Segmentation Model | Excel, Power BI | Classified 2400 SKUs by demand variability and service importance. |
+
+[CERTIFICATIONS]
+Certified in Planning and Inventory Management | ASCM | 2023
+
+[LANGUAGES]
+Spanish | Native; English | Fluent; Portuguese | Conversational
+

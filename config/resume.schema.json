@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.example/resume.schema.json",
+  "title": "Blueprint-aligned normalized resume",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["candidate", "sections", "source_document", "images"],
+  "$defs": {
+    "text": {"type": "string"},
+    "nonEmptyText": {"type": "string", "minLength": 1},
+    "skill": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "category"],
+      "properties": {
+        "name": {"$ref": "#/$defs/nonEmptyText"},
+        "category": {"$ref": "#/$defs/text"}
+      }
+    },
+    "experience": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["experience_id", "job_title", "company", "location", "start_date", "end_date", "description"],
+      "properties": {
+        "experience_id": {"$ref": "#/$defs/nonEmptyText"},
+        "job_title": {"$ref": "#/$defs/nonEmptyText"},
+        "company": {"$ref": "#/$defs/text"},
+        "location": {"$ref": "#/$defs/text"},
+        "start_date": {"$ref": "#/$defs/text"},
+        "end_date": {"$ref": "#/$defs/text"},
+        "description": {"$ref": "#/$defs/text"}
+      }
+    },
+    "education": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["education_id", "degree", "institution", "location", "graduation_year"],
+      "properties": {
+        "education_id": {"$ref": "#/$defs/nonEmptyText"},
+        "degree": {"$ref": "#/$defs/nonEmptyText"},
+        "institution": {"$ref": "#/$defs/nonEmptyText"},
+        "location": {"$ref": "#/$defs/text"},
+        "graduation_year": {"$ref": "#/$defs/text"}
+      }
+    },
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["project_id", "name", "technologies", "description", "url"],
+      "properties": {
+        "project_id": {"$ref": "#/$defs/nonEmptyText"},
+        "name": {"$ref": "#/$defs/nonEmptyText"},
+        "technologies": {"type": "array", "items": {"$ref": "#/$defs/nonEmptyText"}},
+        "description": {"$ref": "#/$defs/text"},
+        "url": {"$ref": "#/$defs/text"}
+      }
+    },
+    "certification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "issuer", "year"],
+      "properties": {
+        "name": {"$ref": "#/$defs/nonEmptyText"},
+        "issuer": {"$ref": "#/$defs/text"},
+        "year": {"$ref": "#/$defs/text"}
+      }
+    },
+    "language": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "proficiency"],
+      "properties": {
+        "name": {"$ref": "#/$defs/nonEmptyText"},
+        "proficiency": {"$ref": "#/$defs/text"}
+      }
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["image_id", "kind", "source_page", "file_name", "relative_path", "sha256", "mime_type", "width", "height"],
+      "properties": {
+        "image_id": {"type": "string", "pattern": "^img_[a-f0-9]{16}$"},
+        "kind": {"const": "embedded"},
+        "source_page": {"type": "integer", "minimum": 1},
+        "file_name": {"$ref": "#/$defs/nonEmptyText"},
+        "relative_path": {"$ref": "#/$defs/nonEmptyText"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "mime_type": {"type": "string", "pattern": "^image/"},
+        "width": {"type": "integer", "minimum": 120},
+        "height": {"type": "integer", "minimum": 120}
+      }
+    }
+  },
+  "properties": {
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "email", "phone", "location", "linkedin", "portfolio", "headline", "summary"],
+      "properties": {
+        "name": {"$ref": "#/$defs/nonEmptyText"},
+        "email": {"type": "string", "minLength": 1},
+        "phone": {"$ref": "#/$defs/text"},
+        "location": {"$ref": "#/$defs/text"},
+        "linkedin": {"$ref": "#/$defs/text"},
+        "portfolio": {"$ref": "#/$defs/text"},
+        "headline": {"$ref": "#/$defs/text"},
+        "summary": {"$ref": "#/$defs/text"}
+      }
+    },
+    "sections": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["skills", "experience", "education", "projects", "certifications", "languages"],
+      "properties": {
+        "skills": {"type": "array", "items": {"$ref": "#/$defs/skill"}},
+        "experience": {"type": "array", "items": {"$ref": "#/$defs/experience"}},
+        "education": {"type": "array", "items": {"$ref": "#/$defs/education"}},
+        "projects": {"type": "array", "items": {"$ref": "#/$defs/project"}},
+        "certifications": {"type": "array", "items": {"$ref": "#/$defs/certification"}},
+        "languages": {"type": "array", "items": {"$ref": "#/$defs/language"}}
+      }
+    },
+    "source_document": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_file", "source_sha256", "ingested_at", "parser_version"],
+      "properties": {
+        "source_file": {"$ref": "#/$defs/nonEmptyText"},
+        "source_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "ingested_at": {"type": "string", "format": "date-time"},
+        "parser_version": {"$ref": "#/$defs/nonEmptyText"}
+      }
+    },
+    "images": {"type": "array", "items": {"$ref": "#/$defs/image"}}
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "blueprint_name": "Resume Knowledge Blueprint",
+  "version": "1.0.0",
+  "purpose": "Normalize heterogeneous resumes into one auditable JSON, graph, and vector representation.",
+  "global_entities": {
+    "candidate": {
+      "required": ["name", "email"],
+      "properties": {
+        "name": "string",
+        "email": "string",
+        "phone": "string",
+        "location": "string",
+        "linkedin": "string",
+        "portfolio": "string",
+        "headline": "string",
+        "summary": "string"
+      }
+    },
+    "source_document": {
+      "properties": {
+        "source_file": "string",
+        "source_sha256": "string",
+        "ingested_at": "ISO-8601 string",
+        "parser_version": "string"
+      }
+    },
+    "image": {
+      "cardinality": "many",
+      "purpose": "Embedded passport/profile photographs only; empty when the source resume has no photo.",
+      "properties": {
+        "image_id": "string: content-based identifier",
+        "kind": "embedded",
+        "source_page": "integer",
+        "relative_path": "string",
+        "sha256": "string",
+        "mime_type": "string",
+        "width": "integer",
+        "height": "integer"
+      }
+    }
+  },
+  "sections": {
+    "skills": {"cardinality": "many", "item_fields": ["name", "category"]},
+    "experience": {"cardinality": "many", "item_fields": ["experience_id", "job_title", "company", "location", "start_date", "end_date", "description"]},
+    "education": {"cardinality": "many", "item_fields": ["education_id", "degree", "institution", "location", "graduation_year"]},
+    "projects": {"cardinality": "many", "item_fields": ["project_id", "name", "technologies", "description", "url"]},
+    "certifications": {"cardinality": "many", "item_fields": ["name", "issuer", "year"]},
+    "languages": {"cardinality": "many", "item_fields": ["name", "proficiency"]}
+  }
+}

@@ -1,0 +1,32 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary and generated files
+tmp/
+tools/
+data/*
+
+# Public synthetic source data and documentation fixtures
+!data/input/
+!data/input/**
+!data/pdf_samples/
+!data/pdf_samples/**
+
+# Generated documentation is explicitly allowlisted outside data/
+docs/images/*.tmp.png

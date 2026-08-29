@@ -1,0 +1,18 @@
+{
+  "collection": "document_blocks",
+  "document": "Text, heading, table rows, or image caption plus nearby text",
+  "metadata_required": [
+    "document_id",
+    "source_file",
+    "page_number",
+    "page_id",
+    "section_id",
+    "section_title",
+    "block_id",
+    "content_type",
+    "bbox",
+    "asset_path"
+  ],
+  "content_types": ["heading", "text", "table", "image"],
+  "purpose": "Semantic retrieval without losing source page, hierarchy, layout, or asset context"
+}

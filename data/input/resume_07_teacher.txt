@@ -1,0 +1,29 @@
+# Hannah Kim
+Email: hannah.kim@example.test
+Phone: +82 10 0000 0007
+Location: Seoul, South Korea
+Headline: Secondary Mathematics Teacher
+
+[SUMMARY]
+Mathematics teacher designing inclusive lessons, formative assessments, and data-informed support for secondary students.
+
+[SKILLS]
+Curriculum Design | Education; Classroom Management | Education; Formative Assessment | Education; GeoGebra | Technology; Google Classroom | Technology; Differentiated Instruction | Education
+
+[EXPERIENCE]
+Mathematics Teacher | Han River International School | Seoul, South Korea | 2019-08 | Present | Teaches algebra and calculus and coordinates an after-school mathematics clinic.
+Teaching Assistant | Busan Learning Academy | Busan, South Korea | 2017-03 | 2019-07 | Supported lesson planning and small-group instruction.
+
+[EDUCATION]
+M.Ed. Curriculum and Instruction | Korea University | Seoul, South Korea | 2019
+B.Sc. Mathematics | Pusan National University | Busan, South Korea | 2017
+
+[PROJECTS]
+Math Progress Dashboard | Google Sheets, Assessment Design | Developed a skills dashboard used for targeted student interventions. |
+
+[CERTIFICATIONS]
+Secondary Teacher Certificate | Ministry of Education Republic of Korea | 2019
+
+[LANGUAGES]
+Korean | Native; English | Fluent
+

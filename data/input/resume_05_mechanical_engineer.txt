@@ -1,0 +1,30 @@
+# Ethan Brooks
+Email: ethan.brooks@example.test
+Phone: +1 415 555 0105
+Location: San Jose, USA
+LinkedIn: https://linkedin.example/ethan-brooks
+Headline: Mechanical Design Engineer
+
+[SUMMARY]
+Mechanical engineer specializing in thermal systems, design for manufacturing, and prototype validation.
+
+[SKILLS]
+SolidWorks | CAD; ANSYS | Simulation; GD&T | Engineering; Python | Programming; Design for Manufacturing | Engineering; FMEA | Quality
+
+[EXPERIENCE]
+Mechanical Design Engineer | Helio Storage Systems | San Jose, USA | 2022-03 | Present | Designed battery enclosure components and validated thermal performance with simulation and testing.
+Graduate Engineer | Vector Motion | Fremont, USA | 2020-06 | 2022-02 | Produced manufacturing drawings and supported supplier design reviews.
+
+[EDUCATION]
+M.S. Mechanical Engineering | San Jose State University | San Jose, USA | 2020
+B.S. Mechanical Engineering | Oregon State University | Corvallis, USA | 2018
+
+[PROJECTS]
+Passive Cooling Test Rig | SolidWorks, ANSYS, Python | Designed and instrumented a modular rig for comparing heat-sink geometries. | https://portfolio.example/ethan/cooling
+
+[CERTIFICATIONS]
+Certified SolidWorks Professional | Dassault Systemes | 2021
+
+[LANGUAGES]
+English | Native
+
